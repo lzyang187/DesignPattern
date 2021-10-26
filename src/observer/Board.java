@@ -17,5 +17,8 @@ class Test {
         WeatherData data = new WeatherData();
         data.addListener(board);
         data.setMeasurements(2, 3);
+
+        // Java系统提供的观察者
+//        Observable
     }
 }
