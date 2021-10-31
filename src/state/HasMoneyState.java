@@ -1,5 +1,7 @@
 package state;
 
+import java.util.Random;
+
 /**
  * 已经投币的状态
  *
@@ -8,6 +10,7 @@ package state;
  */
 public class HasMoneyState implements IState {
     private GumballMachine mMachine;
+    private Random mRandom = new Random();
 
     public HasMoneyState(GumballMachine machine) {
         mMachine = machine;
@@ -20,14 +23,19 @@ public class HasMoneyState implements IState {
 
     @Override
     public void backMoney() {
-        System.out.println("已经退币");
+        System.out.println("退币成功");
         mMachine.setState(mMachine.mNoMoneyState);
     }
 
     @Override
     public void turnCrank() {
-        System.out.println("已经转动了曲柄");
-        mMachine.setState(mMachine.mSoldState);
+        System.out.println("转动曲柄成功");
+        // 是赢家，并且糖果数量大于等于2，则进入赢家状态
+        if (mRandom.nextInt(10) == 0 && mMachine.mGumballCount > 1) {
+            mMachine.setState(mMachine.mWinnerState);
+        } else {
+            mMachine.setState(mMachine.mSoldState);
+        }
     }
 
     @Override

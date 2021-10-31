@@ -11,6 +11,7 @@ public class GumballMachine {
     public IState mHasMoneyState;
     public IState mSoldState;
     public IState mSoldOutState;
+    public IState mWinnerState;
 
     private IState mCurState;
     public int mGumballCount;
@@ -21,6 +22,7 @@ public class GumballMachine {
         mHasMoneyState = new HasMoneyState(this);
         mSoldState = new SoldState(this);
         mSoldOutState = new SoldOutState(this);
+        mWinnerState = new WinnerState(this);
         if (mGumballCount > 0) {
             mCurState = mNoMoneyState;
         } else {

@@ -15,7 +15,7 @@ public class NoMoneyState implements IState {
 
     @Override
     public void insertMoney() {
-        System.out.println("用户投币");
+        System.out.println("用户投币成功");
         mMachine.setState(mMachine.mHasMoneyState);
     }
 
