@@ -7,7 +7,7 @@ package composite;
  * @date: 2019-05-28 18:34
  */
 public class MenuItem extends AbstractMenuComponent {
-    private double price;
+    private final double price;
 
     public MenuItem(String name, double price) {
         this.name = name;

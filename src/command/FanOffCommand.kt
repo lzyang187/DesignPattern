@@ -1,12 +1,12 @@
-package order
+package command
 
-class HighFanCommand(private val fan: Fan) : ICommand {
+class FanOffCommand(private val fan: Fan) : ICommand {
 
     private var preSpeed = Fan.OFF
 
     override fun execute() {
         preSpeed = fan.getSpeed()
-        fan.high()
+        fan.off()
     }
 
     override fun undo() {

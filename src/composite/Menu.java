@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class Menu extends AbstractMenuComponent {
 
-    private List<AbstractMenuComponent> menuComponents = new ArrayList<>();
+    private final List<AbstractMenuComponent> menuComponents = new ArrayList<>();
 
     public Menu(String name) {
         this.name = name;
@@ -23,7 +23,7 @@ public class Menu extends AbstractMenuComponent {
         for (AbstractMenuComponent menuComponent : menuComponents) {
             sb.append(menuComponent.print());
         }
-        return sb.toString() + "}\n";
+        return sb + "}\n";
     }
 
     /**

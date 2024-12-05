@@ -11,7 +11,7 @@ import java.util.List;
  * @date: 2019-05-23 15:43
  */
 public class PancakeHouseMenu implements IMenu {
-    private ArrayList<MenuItem> menuItems;
+    private final ArrayList<MenuItem> menuItems;
 
     public PancakeHouseMenu() {
         menuItems = new ArrayList<>();

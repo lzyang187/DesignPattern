@@ -1,4 +1,4 @@
-package order
+package command
 
 /**
  * 风扇，有高速、低速模式

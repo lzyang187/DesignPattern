@@ -20,7 +20,6 @@ public abstract class AbstractMenuComponent {
     /**
      * 菜单的方法，包含子菜单
      */
-
     abstract void add(AbstractMenuComponent component);
 
     abstract void remove(AbstractMenuComponent component);

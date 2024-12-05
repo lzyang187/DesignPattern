@@ -26,6 +26,6 @@ public class Test {
         allMenu.add(pancakeMenu);
         //服务员开始打印菜单
         Waiter waiter = new Waiter(allMenu);
-        waiter.prient();
+        waiter.print();
     }
 }

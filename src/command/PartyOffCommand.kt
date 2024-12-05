@@ -1,4 +1,4 @@
-package order
+package command
 
 /**
  * 组合命令，开启一组命令

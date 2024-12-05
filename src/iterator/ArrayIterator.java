@@ -10,7 +10,7 @@ import java.util.Iterator;
  */
 public class ArrayIterator implements Iterator<MenuItem> {
 
-    private MenuItem[] menuItems;
+    private final MenuItem[] menuItems;
     private int index;
 
     public ArrayIterator(MenuItem[] menuItems) {

@@ -24,7 +24,7 @@ public abstract class AbstractBeverage {
      * 钩子，让子类可以用此钩子控制是否需要加调料
      */
     boolean needCondiment() {
-        return true;
+        return false;
     }
 
     private void boilWater() {
@@ -37,6 +37,8 @@ public abstract class AbstractBeverage {
         System.out.println("将饮料倒入杯子中");
     }
 
-    protected abstract void addCondiments();
+    protected void addCondiments() {
+
+    }
 
 }

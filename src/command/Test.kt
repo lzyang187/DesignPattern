@@ -1,4 +1,4 @@
-import order.*
+import command.*
 
 fun main() {
     val light = Light("客厅灯")

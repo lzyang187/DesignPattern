@@ -1,4 +1,4 @@
-package order
+package command
 
 /**
  * 空对象：不想返回一个有意义的对象时，空对象就可以派上用场了，客户也可以将处理null的责任转移给空对象

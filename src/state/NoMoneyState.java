@@ -7,7 +7,7 @@ package state;
  * @date: 2019-05-29 18:16
  */
 public class NoMoneyState implements IState {
-    private GumballMachine mMachine;
+    private final GumballMachine mMachine;
 
     public NoMoneyState(GumballMachine machine) {
         mMachine = machine;

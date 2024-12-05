@@ -1,4 +1,4 @@
-package order
+package command
 
 class LightOnCommand(private val light: Light) : ICommand {
 

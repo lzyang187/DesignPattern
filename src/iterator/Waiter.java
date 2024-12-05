@@ -11,7 +11,7 @@ import java.util.List;
  * @date: 2019-05-23 15:56
  */
 public class Waiter {
-    private List<IMenu> menus;
+    private final List<IMenu> menus;
 
     public Waiter(List<IMenu> menuList) {
         menus = menuList;

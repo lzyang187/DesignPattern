@@ -1,4 +1,4 @@
-package order
+package command
 
 /**
  * 发起请求的类：遥控器
@@ -16,7 +16,7 @@ class RemoteControl {
 
     init {
         // 开始时遥控器插槽为空
-        for (i in 0..7) {
+        for (i in 0 until SIZE) {
             onCommands.add(i, NoCommand())
             offCommands.add(i, NoCommand())
         }

@@ -29,8 +29,4 @@ public class Espresso extends AbstractBeverage {
         }
     }
 
-    @Override
-    int getSize() {
-        return size;
-    }
 }

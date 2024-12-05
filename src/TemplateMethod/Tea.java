@@ -10,13 +10,4 @@ public class Tea extends AbstractBeverage {
         System.out.println("用沸水浸泡茶叶");
     }
 
-    @Override
-    protected void addCondiments() {
-
-    }
-
-    @Override
-    boolean needCondiment() {
-        return false;
-    }
 }

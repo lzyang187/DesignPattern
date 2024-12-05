@@ -8,7 +8,13 @@ public interface IState {
 
     void backMoney();
 
+    /**
+     * 转动曲柄
+     */
     void turnCrank();
 
+    /**
+     * 发放糖果
+     */
     void dispense();
 }

@@ -10,7 +10,7 @@ import java.util.Iterator;
  */
 public class DinnerHouseMenu implements IMenu {
     public static final int MENU_ITEM_SIZE = 3;
-    private MenuItem[] menuItems;
+    private final MenuItem[] menuItems;
     private int index = 0;
 
     public DinnerHouseMenu() {
